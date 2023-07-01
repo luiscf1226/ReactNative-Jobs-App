@@ -8,7 +8,7 @@ const ScreenHeaderBtn = ({iconUrl,dimension,handelPress})=> {
     <TouchableOpacity style={styles.btnContainer} >
       <Image
         source={iconUrl}
-        resizeMode='covers'
+       
         style={styles.btnImg(dimension)}
       />
     </TouchableOpacity>

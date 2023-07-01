@@ -27,7 +27,7 @@ const Welcome = () => {
       <TouchableOpacity style={styles.searchBtn} onPress={()=>{}}>
         <Image
           source={icons.search}
-          resizeMode='contain'
+          //resizeMode='contain'
           style={styles.searchBtnImage}
         />
       </TouchableOpacity>
