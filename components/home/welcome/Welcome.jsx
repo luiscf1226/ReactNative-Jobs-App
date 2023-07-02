@@ -8,6 +8,12 @@ import {icons,SIZES} from '../../../constants'
 const jobTypes= ['Full-time','Part-time','Contractor']
 const Welcome = () => {
   const router = useRouter();
+  const [message, setMessage] = useState('');
+
+  // 👇️ called every time input's value changes
+  const handleChange = event => {
+    setMessage(event.target.value);
+  };
   const [activeJobType,setactiveJobType]= useState('Full-time')
   return (
     <View>
@@ -19,8 +25,8 @@ const Welcome = () => {
       <View style={styles.searchWrapper}>
         <TextInput
         style={styles.searchInput}
-        value=""
-        onChange={()=>{}}
+        onChange={handleChange}
+        value={message}
         placeholder="What are you looking for?"
         />
       </View>
